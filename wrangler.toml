@@ -1,0 +1,10 @@
+name = "blog"
+type = "webpack"
+account_id = "8564989faee7edaef877943d97943860"
+workers_dev = true
+route = "my-awesome.workers.dev/*"
+zone_id = ""
+
+[site]
+bucket = "./public"
+entry-point = "workers-site"

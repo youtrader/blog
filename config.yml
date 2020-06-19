@@ -1,0 +1,45 @@
+baseurl: "https://youtrader.github.io/blog/"
+# baseurl: "/"
+title: "ダメなトレード履歴と呟き"
+theme: "ghostwriter"
+defaultContentLanguage: "ja"
+canonifyURLs: true
+
+author:
+  name: YOU
+
+params:
+  mainSections: ["post"]
+  intro: true
+  headline: "退場までのトレード履歴"
+  description: "無能トレーダーのトレード履歴と呟き"
+  # github = "https://github.com/XXX"
+  twitter: "https://twitter.com/__s_you"
+  # email = "XXX@example.com"
+  opengraph: true
+  shareTwitter: true
+  dateFormat: "2006年01月02日 (Mon)"
+
+publishDir: docs
+
+permalinks:
+  post: "/:year/:month/:day/:filename/"
+
+markup:
+  goldmark:
+    extensions:
+      definitionList: true
+      footnote: true
+      linkify: true
+      strikethrough: true
+      table: true
+      taskList: true
+      typographer: true
+    parser:
+      attribute: true
+      autoHeadingID: true
+      autoHeadingIDType: github
+    renderer:
+      hardWraps: false
+      unsafe: false
+      xHTML: false
